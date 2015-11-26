@@ -1,4 +1,23 @@
-ELU : Entity Linking trained by Unannotated text
+# ELU-1.0 : Entity Linking trained by Unannotated text
+
+## Description
+
+ELU-1.0 is the first version of opensource entity linking for Korean. Unsupervised learning method is used for multilingual entity linking system, and we experiment ELU-1.0 for not only Korean but also Japanese. ELU-1.0 has some limitation such as running time problme (it uses SPARQL query in run-time). This source code is written in python.
+
+
+## Licenses
+
+* `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* If you want to commercialize this resource, [please contact to us](http://mrlab.kaist.ac.kr/contact)
+
+## Citation
+
+If you use the current of PROJECT NAME, please cite the following papers.
+
+[Entity Linking Korean Text: An Unsupervised Learning Approach using Semantic Relations](http://www.aclweb.org/anthology/K15-1#page=156)
+
+
+## How to use
 
 --------
 Start-up
