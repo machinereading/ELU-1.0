@@ -1,0 +1,43 @@
+{
+	"host":"143.248.135.60",
+	"port":"10118",
+	"lang":"ko-etri",
+	"domains":[
+		{
+			"name":"dbpedia-instance",
+			"endpoint":"http://143.248.135.20:45103/sparql",
+			"graph_iri":"",
+			"label_query":"dbpedia-instance.labels.sparql.txt",
+			"pred_freq_query":"dbpedia-pred-freq.sparql.txt",
+			"relation_query":"dbpedia-relations.sparql.txt",
+			"subject_score_query":"dbpedia-subject-score.sparql.txt",
+			"object_score_query":"dbpedia-object-score.sparql.txt",
+			"priority":0,
+			"debug":false,
+			"label_cache":{
+				"file": "2014-dbpedia-instance-label-cache.txt",
+				"use":true,
+				"write":false
+			},
+			"pred_freq_cache":{
+				"file": "2014-dbpedia-link-freq-cache.txt",
+				"use":true,
+				"write":false
+			}
+		}
+	],
+	"feature_weights": {
+		"prev_pos":1.0,
+		"next_pos":1.0,
+		"start_pos":1.0,
+		"end_pos":1.0,
+		"has_pos":1.0,
+		"word_length":1.0,
+		"uri_object":1.0,
+		"relation_afterscore":1.0	
+	},
+	"recalculate_scores":false,
+	"use_svm":false,
+	"features":"4360.features.json.retry.txt",
+	"ignore_numbers":true
+}

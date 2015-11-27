@@ -1,0 +1,3 @@
+select count(distinct ?o) as ?count where {
+	[[X1]] ?p ?o.
+}

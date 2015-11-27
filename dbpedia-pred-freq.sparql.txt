@@ -1,0 +1,3 @@
+select ?pred, count(?s) as ?freq where {
+?s ?pred ?o.
+} group by ?pred

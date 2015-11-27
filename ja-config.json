@@ -1,0 +1,43 @@
+{
+	"host":"143.248.135.60",
+	"port":"2223",
+	"lang":"ja-mecab",
+	"domains":[
+		{
+			"name":"dbpedia-instance",
+			"endpoint":"http://143.248.135.60:42014/sparql",
+			"graph_iri":"http://ja2014.kaist.ac.kr",
+			"label_query":"ja-dbpedia-instance.labels.sparql.txt",
+			"link_freq_query":"dbpedia-link-freq.sparql.txt",
+			"relation_query":"dbpedia-relations.sparql.txt",
+			"subject_score_query":"dbpedia-subject-score.sparql.txt",
+			"object_score_query":"dbpedia-object-score.sparql.txt",
+			"priority":0,
+			"debug":false,
+			"label_cache":{
+				"file": "2014-ja-dbpedia-instance-label-cache.txt",
+				"use":true,
+				"write":false
+			},
+			"pred_freq_cache":{
+				"file": "2014-ja-dbpedia-link-freq-cache.txt",
+				"use":false,
+				"write":true
+			}
+		}
+	],
+	"feature_weights": {
+		"prev_pos":1.0,
+		"next_pos":1.0,
+		"start_pos":1.0,
+		"end_pos":1.0,
+		"has_pos":1.0,
+		"word_length":1.0,
+		"uri_object":1.0,
+		"relation_afterscore":1.0	
+	},
+	"recalculate_scores":false,
+	"use_svm":false,
+	"features":"ja-3340.features.json.txt",
+	"ignore_numbers":true
+}
